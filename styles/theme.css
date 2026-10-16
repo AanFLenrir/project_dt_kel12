@@ -1,31 +1,65 @@
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --primary: #0a0a0a;
+  /* Light mode - Eco emerald theme */
+  --background: #f8fafc;
+  --foreground: #081411;
+  --panel: #ffffff;
+  --panel-secondary: #f1f5f9;
+  --primary: #059669;
   --primary-foreground: #ffffff;
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
-  --border: #e4e4e7;
-  --ring: #a1a1aa;
+  --muted: #f1f5f9;
+  --muted-foreground: #4b5563;
+  --border: #e2e8f0;
+  --ring: #10b981;
   --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
   --radius: 0.5rem;
+
+  /* Custom Brand Tokens */
+  --emerald: #059669;
+  --accent-mint: #10b981;
+  --accent-cyan: #0891b2;
+
+  /* ISPU Standard Colors (Permen LHK 14/2020) */
+  --ispu-baik: #059669;
+  --ispu-sedang: #2563eb;
+  --ispu-tidak-sehat: #d97706;
+  --ispu-sangat-tidak-sehat: #dc2626;
+  --ispu-berbahaya: #701a75;
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --primary: #ededed;
-  --primary-foreground: #0a0a0a;
-  --muted: #262626;
-  --muted-foreground: #a1a1aa;
-  --border: #262626;
-  --ring: #52525b;
+  /* Dark mode - Dark Emerald Dashboard per Master Project Brief */
+  --background: #081411;
+  --foreground: #f8fafc;
+  --panel: #10231d;
+  --panel-secondary: #163127;
+  --primary: #10b981;
+  --primary-foreground: #081411;
+  --muted: #163127;
+  --muted-foreground: #9ca3af;
+  --border: #243b32;
+  --ring: #10b981;
   --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  /* Custom Brand Tokens */
+  --emerald: #10b981;
+  --accent-mint: #a7f3d0;
+  --accent-cyan: #22d3ee;
+
+  /* ISPU Standard Colors (Permen LHK 14/2020) */
+  --ispu-baik: #10b981;
+  --ispu-sedang: #3b82f6;
+  --ispu-tidak-sehat: #f59e0b;
+  --ispu-sangat-tidak-sehat: #ef4444;
+  --ispu-berbahaya: #881337;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-panel: var(--panel);
+  --color-panel-secondary: var(--panel-secondary);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-muted: var(--muted);
@@ -33,6 +67,15 @@
   --color-border: var(--border);
   --color-ring: var(--ring);
   --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-emerald: var(--emerald);
+  --color-mint: var(--accent-mint);
+  --color-cyan: var(--accent-cyan);
+  --color-ispu-baik: var(--ispu-baik);
+  --color-ispu-sedang: var(--ispu-sedang);
+  --color-ispu-tidak-sehat: var(--ispu-tidak-sehat);
+  --color-ispu-sangat-tidak-sehat: var(--ispu-sangat-tidak-sehat);
+  --color-ispu-berbahaya: var(--ispu-berbahaya);
   --radius-sm: calc(var(--radius) - 2px);
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 4px);
